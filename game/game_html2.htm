@@ -1,0 +1,42 @@
+﻿<html id="index">
+  <head>
+    <meta charset="UTF-8"><title>game</title>
+    <link rel="stylesheet" href="game_css2.css">
+  </head>
+  <body id="bg">
+    <!-- JavaScript読み込み -->
+    <script src="game_javascript2.js"></script>
+    <!-- BGM -->
+    <bgsound src="tnt.mp3" id="BGM" loop="infinite">
+    <!-- タイトル -->
+    <p class="title" id="str_title">それいけ東邦マン</p>
+    
+    <!-- プレイヤーと敵のキャラ -->
+    <img id="player" style="display:none" src="character/player_1.png">
+    <img id="player2" style="display:none" src="character/player_2.png">
+    <img id="player3" style="display:none" src="character/player_3.png">
+    <img id="enemy"  style="display:none" src="character/enemy_1.png">
+    <img id="muteki" style="display:none" src="character/item_1.png">
+    <img id="potion" style="display:none" src="character/item_2.png">
+    <!-- hpとscoreの表示 -->
+    <div id="score_hp" class="score_hp" style="display:none">
+      <span class="score" ><font color="white" size=4 border="solid" border_color="black">SCORE: </font></span><input TYPE="text" id="score" NAME="fld1">
+     <span class="hp" ><font color="white" size=4>HP: </font></span><input TYPE="text" id="php" NAME="fld2" value="3"><br>
+    </div>
+    <!-- キャンバスの作成 -->
+    <canvas id="screen" width='600' height='650'></canvas>
+    <!-- startボタン -->
+    <a href="#" class="btn" id="start" onClick="gameStart()"><span>START!</span></a>
+    <a href="ruru2.htm" class="btn" id="setumei" ><span>ルール説明</span></a>
+    <!-- gameover -->
+    <div id="over" style="text-align: center; display: none">
+
+      <!-- gameoverボタン -->
+      <a href="#" class="btn" id="start" onClick="reset()"><span>RETRY!</span></a>
+      <!-- 文字 -->
+      <p id="go" class="gameover" style="display:none">GAMEOVER</p>
+      <p id="gc" class="gamecrear" style="display:none">GAMECREAR</p>
+    </div>
+        
+  </body>
+</html>
