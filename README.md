@@ -14,7 +14,5 @@
 
 ## 📸 スクリーンショット
 ![image](https://github.com/user-attachments/assets/0dea1dd5-4ed7-4c9e-b700-6327ce7ffd7d)
+![Uploading TohoMan.gif…]()
 
-
-```markdown
-![Game Screenshot](https://github.com/KouseiOtsuka0624/Soreike-Tohoman/blob/main/screenshots/screenshot1.png)
